@@ -1,0 +1,26 @@
+{
+  "name": "antd",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "liusize <895898088@qq.com>",
+  "homepage": "https://github.com/hudiemon/antd#readme",
+  "license": "ISC",
+  "main": "lib/antd.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudiemon/antd.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/antd.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hudiemon/antd/issues"
+  }
+}
