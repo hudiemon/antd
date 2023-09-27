@@ -49,6 +49,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
@@ -63,7 +66,6 @@
     "eslint": "^8.50.0",
     "father": "^4.3.5",
     "husky": "^8.0.3",
-    "lerna": "^7.3.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
@@ -71,5 +73,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "stylelint": "^15.10.3"
+  },
+  "dependencies": {
+    "antd": "^5.9.3"
   }
 }

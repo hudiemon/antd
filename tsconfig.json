@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
     "strict": true,
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
       "@@/*": [
