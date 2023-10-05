@@ -49,9 +49,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
@@ -59,6 +56,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@types/lodash": "^4.14.199",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "@umijs/lint": "^4.0.81",
@@ -75,6 +73,8 @@
     "stylelint": "^15.10.3"
   },
   "dependencies": {
-    "antd": "^5.9.3"
+    "antd": "^5.9.3",
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21"
   }
 }
