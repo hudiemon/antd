@@ -1,7 +1,7 @@
 import {Button as AntButton} from 'antd'
 import type {ButtonProps as AntButtonProps} from 'antd'
 import {useState} from "react";
-import {isPromise} from '../utils'
+import {isPromise} from '@hudiemon/utils'
 
 export type ButtonProps = Omit<AntButtonProps, "loading" | "onClick"> & {
   loading?: boolean | 'auto';

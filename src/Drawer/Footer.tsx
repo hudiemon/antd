@@ -1,5 +1,5 @@
 import React from 'react';
-import {NativeProps, withNativeProps} from "../utils/withNativeProps";
+import {NativeProps, withNativeProps} from '@hudiemon/utils';
 
 type FooterProps = {
   children?: React.ReactNode

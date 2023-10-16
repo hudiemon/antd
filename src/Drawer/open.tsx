@@ -1,6 +1,6 @@
 import React from 'react'
 import {Drawer, DrawerProps} from './Drawer'
-import {renderImperatively} from '../utils/renderImperatively'
+import {renderImperatively} from '@hudiemon/utils'
 
 export type DrawerOpenProps = Omit<
   DrawerProps,

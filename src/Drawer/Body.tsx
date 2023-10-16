@@ -1,4 +1,4 @@
-import {NativeProps, withNativeProps} from "../utils/withNativeProps";
+import {NativeProps, withNativeProps} from '@hudiemon/utils';
 
 type BodyProps = {
   children?: React.ReactNode

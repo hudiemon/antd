@@ -3,7 +3,7 @@
  * description: Promise状态自动更新。
  */
 import {Button} from "@hudiemon/antd"
-import {sleep} from "@hudiemon/antd/utils";
+import {sleep} from '@hudiemon/utils';
 
 const Demo1 = () => {
   return <Button loading={"auto"} onClick={async () => {
