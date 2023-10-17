@@ -1,11 +1,11 @@
-import {Tree as AntTree, Input,Button} from 'antd';
-import {Drawer} from '@hudiemon/antd'
-import {useMemo, useState} from "react";
-import type {DataNode} from 'antd/es/tree';
-import flattenDeep from "lodash/flattenDeep"
+import { Drawer } from '@hudiemon/antd';
+import { Tree as AntTree, Button, Input } from 'antd';
+import type { DataNode } from 'antd/es/tree';
+import flattenDeep from 'lodash/flattenDeep';
+import { useMemo, useState } from 'react';
 
-export const Tree = (props) => {
-  const {treeData: propsTreeData} = props;
+export const Tree = (props: any) => {
+  const { treeData: propsTreeData } = props;
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
   const [searchValue, setSearchValue] = useState('');
   const [autoExpandParent, setAutoExpandParent] = useState(true);
@@ -14,14 +14,15 @@ export const Tree = (props) => {
     setAutoExpandParent(false);
   };
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const {value} = e.target;
+    const { value } = e.target;
     const loop = (data: DataNode[], parentKey?: React.Key) =>
       data.reduce((result: any[], item) => {
+        // @ts-ignore
         if (item.title?.indexOf(value) > -1 && parentKey) {
-          result.push(parentKey)
+          result.push(parentKey);
         }
         if (item.children) {
-          result.push(loop(item.children, item.key))
+          result.push(loop(item.children, item.key));
         }
         return result;
       }, []);
@@ -47,7 +48,7 @@ export const Tree = (props) => {
             <span>{strTitle}</span>
           );
         if (item.children) {
-          return {title, key: item.key, children: loop(item.children)};
+          return { title, key: item.key, children: loop(item.children) };
         }
 
         return {
@@ -61,20 +62,24 @@ export const Tree = (props) => {
   return (
     <>
       <Drawer.Body>
-        <Input.Search onChange={onChange}
-                      placeholder="请输入搜索内容"
-                      style={{marginBottom: 8}}/>
-        <AntTree multiple
-                 checkable
-                 selectable={false}
-                 onExpand={onExpand}
-                 treeData={treeData}
-                 expandedKeys={expandedKeys}
-                 autoExpandParent={autoExpandParent}/>
+        <Input.Search
+          onChange={onChange}
+          placeholder="请输入搜索内容"
+          style={{ marginBottom: 8 }}
+        />
+        <AntTree
+          multiple
+          checkable
+          selectable={false}
+          onExpand={onExpand}
+          treeData={treeData}
+          expandedKeys={expandedKeys}
+          autoExpandParent={autoExpandParent}
+        />
       </Drawer.Body>
       <Drawer.Footer>
         <Button>取消</Button>
-        <Button type={"primary"}>确定</Button>
+        <Button type={'primary'}>确定</Button>
       </Drawer.Footer>
     </>
   );

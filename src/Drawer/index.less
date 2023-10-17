@@ -6,11 +6,17 @@
       padding: 0;
       display: flex;
       overflow: visible;
+      position: relative;
       flex-direction: column;
     }
 
     &-body {
       flex: auto;
+      overflow: auto;
+
+      &-content {
+        padding: 24px;
+      }
     }
 
     &-footer {

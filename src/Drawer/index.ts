@@ -1,9 +1,8 @@
-import {Drawer} from './Drawer';
-import {open} from './open';
-import {Body} from './Body';
-import {Footer} from "./Footer";
-import {attachPropertiesToComponent} from '@hudiemon/utils'
+import { attachPropertiesToComponent } from '@hudiemon/utils';
+import { Body } from './Body';
+import { Drawer } from './Drawer';
+import { Footer } from './Footer';
+import './index.less';
+import { open } from './open';
 
-import './index.less'
-
-export default attachPropertiesToComponent(Drawer, {open, Body, Footer});
+export default attachPropertiesToComponent(Drawer, { open, Body, Footer });
