@@ -1,29 +1,26 @@
 {
   "name": "@hudiemon/antd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
+  "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
     "build": "father build",
     "build:watch": "father dev",
+    "dev": "dumi dev",
     "docs:build": "dumi build",
-    "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev"
   },
-  "authors": [
-    "liusize"
-  ],
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -46,12 +43,11 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+  "dependencies": {
+    "@hudiemon/utils": "^1.0.0",
+    "antd": "^5.9.3",
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
@@ -72,10 +68,14 @@
     "react-dom": "^18.2.0",
     "stylelint": "^15.10.3"
   },
-  "dependencies": {
-    "@hudiemon/utils": "^1.0.0",
-    "antd": "^5.9.3",
-    "classnames": "^2.3.2",
-    "lodash": "^4.17.21"
-  }
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "liusize"
+  ]
 }
