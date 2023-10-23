@@ -12,10 +12,48 @@ const Demo1 = () => {
           title: 'Function Modal',
           children: (
             <div>
-              <Modal.Body>1231313</Modal.Body>
+              <Modal.Body>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+                <div>1231313</div>
+              </Modal.Body>
               <Modal.Footer>
-                <Button>123</Button>
-                <Button>456</Button>
+                <Button>取消</Button>
+                <Button type={'primary'}>确认</Button>
               </Modal.Footer>
             </div>
           ),
