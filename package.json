@@ -1,6 +1,6 @@
 {
   "name": "@hudiemon/antd",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "license": "MIT",
   "module": "dist/index.js",
@@ -44,6 +44,7 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
     "@hudiemon/utils": "^1.0.0",
     "antd": "^5.9.3",
     "classnames": "^2.3.2",
